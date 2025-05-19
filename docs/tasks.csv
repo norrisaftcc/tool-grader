@@ -1,0 +1,26 @@
+Title,Description,Assignee,Status,Priority,Epic,Sprint,Type,Story Points
+"Setup core project structure","Create the basic directory structure for the tool-grader project as described in docs/README.md","","Ready","High","Core Infrastructure","Sprint 1","Setup",3
+"Create config.py module","Implement configuration management for the autograder","","Backlog","Medium","Core Infrastructure","Sprint 1","Development",2
+"Create canvas_api.py module","Implement Canvas LMS API integration using canvasapi library","","Backlog","Medium","Canvas Integration","Sprint 2","Development",5
+"Create github_api.py module","Implement GitHub API client for repository access","","Backlog","Medium","GitHub Integration","Sprint 2","Development",5
+"Create docker_runner.py module","Implement Docker container management for secure code execution","","Backlog","High","Docker Setup","Sprint 1","Development",8
+"Create test_runner.py module","Implement doctest execution and result collection","","Backlog","High","Core Infrastructure","Sprint 1","Development",5
+"Create grader.py module","Implement core grading orchestration logic","","Backlog","High","Core Infrastructure","Sprint 1","Development",5
+"Create Flask webhook handlers","Implement webhook handlers for GitHub events","","In Progress","Medium","GitHub Integration","Sprint 2","Development",5
+"Create CLI commands","Implement command-line interface for manual grading","","Backlog","Low","Core Infrastructure","Sprint 1","Development",3
+"Create Dockerfile","Create Docker configuration for the grading container","","Ready","High","Docker Setup","Sprint 1","Development",3
+"Create entrypoint.sh","Create container entrypoint script","","Backlog","Medium","Docker Setup","Sprint 1","Development",2
+"Create docker-compose.yml","Create local development setup with Docker Compose","","Backlog","Medium","Docker Setup","Sprint 1","Development",3
+"Test Docker security","Configure and test container security measures","","Backlog","High","Docker Setup","Sprint 1","Testing",5
+"Set up pytest framework","Configure pytest for the project","","Ready","Medium","Testing","Sprint 1","Setup",2
+"Create unit tests","Create unit tests for core modules","","Backlog","Medium","Testing","Sprint 1","Testing",5
+"Create integration tests","Create end-to-end tests for the grading workflow","","Backlog","Low","Testing","Sprint 2","Testing",8
+"Add CI/CD pipeline","Set up GitHub Actions for continuous integration","","Backlog","Low","DevOps","Sprint 3","Setup",5
+"Implement Canvas grade posting","Create functionality to post grades back to Canvas","","Backlog","Medium","Canvas Integration","Sprint 2","Development",5
+"Set up webhook security","Implement authentication and validation for webhooks","","Backlog","High","Security","Sprint 2","Development",3
+"Create input validation","Add validation for all user inputs and API data","","Backlog","Medium","Security","Sprint 2","Development",3
+"Add more Python assignments","Create additional assignments testing loops and data structures","","Testing","Medium","Content Development","Sprint 1","Content",5
+"Create student dashboard","Implement simple UI for students to view feedback","","Backlog","Low","UI Development","Sprint 3","Development",8
+"Create instructor analytics","Add reporting and analytics features for instructors","","Backlog","Low","UI Development","Sprint 3","Development",8
+"Create submission queue","Implement queue-based processing for handling peak loads","","Backlog","Low","Performance","Sprint 3","Development",5
+"Setup environment variables","Create environment variable configuration for APIs and services","","Ready","High","Core Infrastructure","Sprint 1","Setup",1
