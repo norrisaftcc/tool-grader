@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  grader:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: python-autograder
+    volumes:
+      - ../:/app
+    working_dir: /app
+    command: ["python", "-m", "autograder.test_runner", "/app/test_submission"]
+    environment:
+      - PYTHONPATH=/app
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - grader_net
+    restart: unless-stopped
+    mem_limit: 256m
+    cpus: 0.5
+
+  webhook:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: autograder-webhook
+    volumes:
+      - ../:/app
+    working_dir: /app
+    command: ["python", "-m", "webhook.app"]
+    environment:
+      - PYTHONPATH=/app
+      - FLASK_DEBUG=0
+      - FLASK_PORT=5000
+    ports:
+      - "5000:5000"
+    networks:
+      - grader_net
+    restart: unless-stopped
+    depends_on:
+      - grader
+
+networks:
+  grader_net:
+    driver: bridge
