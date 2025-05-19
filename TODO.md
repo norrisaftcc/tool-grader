@@ -8,11 +8,11 @@
 - [x] Create API documentation structure
 
 ## MVP Demo Implementation
-- [ ] Create simple demo of the system
-  - [ ] Use local folders for grading (without external integrations)
-  - [ ] Make grading portion visible for testing
-  - [ ] Create example student submissions
-  - [ ] Demonstrate doctest evaluation
+- [x] Create simple demo of the system
+  - [x] Use local folders for grading (without external integrations)
+  - [x] Make grading portion visible for testing
+  - [x] Create example student submissions
+  - [x] Demonstrate doctest evaluation
 
 ## Core Infrastructure
 - [ ] Set up basic project structure as per docs/README.md

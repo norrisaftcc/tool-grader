@@ -1,0 +1,23 @@
+{
+  "student": "student3",
+  "implemented_functions": [
+    "add",
+    "subtract",
+    "multiply",
+    "factorial"
+  ],
+  "missing_functions": [
+    "divide"
+  ],
+  "functions_with_doctests": [],
+  "doctest_results": [],
+  "passed_tests": 0,
+  "total_tests": 0,
+  "scores": {
+    "implementation": 56.0,
+    "doctests": 0.0,
+    "error_handling": 0,
+    "total": 56.0
+  },
+  "max_score": 100
+}

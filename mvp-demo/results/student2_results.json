@@ -1,0 +1,48 @@
+{
+  "student": "student2",
+  "implemented_functions": [
+    "add",
+    "subtract",
+    "multiply",
+    "divide",
+    "factorial"
+  ],
+  "missing_functions": [],
+  "functions_with_doctests": [
+    "add",
+    "multiply",
+    "factorial"
+  ],
+  "doctest_results": [
+    {
+      "name": "functions.add",
+      "examples": 1,
+      "failures": 0,
+      "success": true,
+      "output": "Trying:\n    add(2, 3)\nExpecting:\n    5\nok\n"
+    },
+    {
+      "name": "functions.factorial",
+      "examples": 1,
+      "failures": 0,
+      "success": true,
+      "output": "Trying:\n    factorial(5)\nExpecting:\n    120\nok\n"
+    },
+    {
+      "name": "functions.multiply",
+      "examples": 1,
+      "failures": 0,
+      "success": true,
+      "output": "Trying:\n    multiply(3, 4)\nExpecting:\n    12\nok\n"
+    }
+  ],
+  "passed_tests": 3,
+  "total_tests": 3,
+  "scores": {
+    "implementation": 70.0,
+    "doctests": 12.0,
+    "error_handling": 5,
+    "total": 87.0
+  },
+  "max_score": 100
+}

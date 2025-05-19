@@ -1,0 +1,64 @@
+{
+  "student": "student1",
+  "implemented_functions": [
+    "add",
+    "subtract",
+    "multiply",
+    "divide",
+    "factorial"
+  ],
+  "missing_functions": [],
+  "functions_with_doctests": [
+    "add",
+    "multiply",
+    "factorial",
+    "divide",
+    "subtract"
+  ],
+  "doctest_results": [
+    {
+      "name": "functions.add",
+      "examples": 2,
+      "failures": 0,
+      "success": true,
+      "output": "Trying:\n    add(2, 3)\nExpecting:\n    5\nok\nTrying:\n    add(-1, 1)\nExpecting:\n    0\nok\n"
+    },
+    {
+      "name": "functions.divide",
+      "examples": 3,
+      "failures": 0,
+      "success": true,
+      "output": "Trying:\n    divide(10, 2)\nExpecting:\n    5.0\nok\nTrying:\n    divide(7, 2)\nExpecting:\n    3.5\nok\nTrying:\n    divide(5, 0)\nExpecting:\n    Traceback (most recent call last):\n        ...\n    ZeroDivisionError: Cannot divide by zero\nok\n"
+    },
+    {
+      "name": "functions.factorial",
+      "examples": 3,
+      "failures": 0,
+      "success": true,
+      "output": "Trying:\n    factorial(0)\nExpecting:\n    1\nok\nTrying:\n    factorial(5)\nExpecting:\n    120\nok\nTrying:\n    factorial(-1)\nExpecting:\n    Traceback (most recent call last):\n        ...\n    ValueError: Factorial is not defined for negative numbers\nok\n"
+    },
+    {
+      "name": "functions.multiply",
+      "examples": 2,
+      "failures": 0,
+      "success": true,
+      "output": "Trying:\n    multiply(3, 4)\nExpecting:\n    12\nok\nTrying:\n    multiply(-2, 3)\nExpecting:\n    -6\nok\n"
+    },
+    {
+      "name": "functions.subtract",
+      "examples": 2,
+      "failures": 0,
+      "success": true,
+      "output": "Trying:\n    subtract(5, 2)\nExpecting:\n    3\nok\nTrying:\n    subtract(2, 5)\nExpecting:\n    -3\nok\n"
+    }
+  ],
+  "passed_tests": 5,
+  "total_tests": 5,
+  "scores": {
+    "implementation": 70.0,
+    "doctests": 20.0,
+    "error_handling": 10,
+    "total": 100.0
+  },
+  "max_score": 100
+}
