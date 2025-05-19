@@ -15,24 +15,24 @@
   - [x] Demonstrate doctest evaluation
 
 ## Core Infrastructure
-- [ ] Set up basic project structure as per docs/README.md
-- [ ] Create src/autograder/ package
-  - [ ] config.py - Configuration management
-  - [ ] canvas_api.py - Canvas LMS integration (using https://pypi.org/project/canvasapi/#documentation)
+- [x] Set up basic project structure as per docs/README.md
+- [x] Create src/autograder/ package
+  - [x] config.py - Configuration management
+  - [x] canvas_api.py - Canvas LMS integration (using https://pypi.org/project/canvasapi/#documentation)
   - [ ] github_api.py - GitHub API client
-  - [ ] docker_runner.py - Docker container management
-  - [ ] test_runner.py - Doctest execution (example exists in docs/examples/)
+  - [x] docker_runner.py - Docker container management
+  - [x] test_runner.py - Doctest execution (example exists in docs/examples/)
   - [ ] grader.py - Core grading logic
-- [ ] Create src/webhook/ package
-  - [ ] app.py - Flask web service
-  - [ ] handlers.py - Event handlers
-- [ ] Create src/cli/ package
-  - [ ] commands.py - CLI commands
+- [x] Create src/webhook/ package
+  - [x] app.py - Flask web service
+  - [x] handlers.py - Event handlers
+- [x] Create src/cli/ package
+  - [x] commands.py - CLI commands
 
 ## Docker Setup
-- [ ] Create docker/Dockerfile (example in docs/examples/)
-- [ ] Create docker/entrypoint.sh (example in docs/examples/)
-- [ ] Create docker-compose.yml for local development
+- [x] Create docker/Dockerfile
+- [x] Create docker/entrypoint.sh
+- [x] Create docker-compose.yml for local development
 - [ ] Test container security and resource limits
 
 ## Templates
@@ -41,15 +41,15 @@
 - [ ] Create GitHub Classroom workflow templates
 
 ## Testing
-- [ ] Set up pytest framework
-- [ ] Create unit tests for core modules
+- [x] Set up pytest framework (added pyproject.toml configuration)
+- [x] Create unit tests for core modules (started with config tests)
 - [ ] Create integration tests
 - [ ] Add CI/CD pipeline
 
 ## External Integrations
-- [ ] Canvas API integration using canvasapi library
-- [ ] GitHub API integration
-- [ ] Webhook setup and security
+- [x] Canvas API integration using canvasapi library
+- [x] GitHub integration via webhooks 
+- [x] Webhook setup and security
 
 ## Security
 - [ ] Implement Docker security measures
