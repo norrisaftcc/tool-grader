@@ -1,0 +1,39 @@
+# Dockerfile for Python Autograder
+# Creates a secure, minimal Docker container for running student code
+
+# Use Python slim image to minimize attack surface
+FROM python:3.10-slim
+
+# Label metadata
+LABEL maintainer="Your Institution <email@example.edu>"
+LABEL description="Secure Python code execution environment for autograding"
+LABEL version="0.1.0"
+
+# Create a non-root user to run tests
+RUN groupadd -r grader && useradd -r -g grader grader
+
+# Set working directory
+WORKDIR /code
+
+# Install minimal dependencies
+# Only install what's absolutely necessary for grading
+RUN pip install --no-cache-dir pytest doctest-tools
+
+# Copy entrypoint script
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# Create directories with appropriate permissions
+RUN mkdir -p /code /results && \
+    chown -R grader:grader /code /results
+
+# Set environment variables
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONDONTWRITEBYTECODE=1
+
+# Switch to non-root user
+USER grader
+
+# Default command (can be overridden)
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["python", "-m", "doctest", "/code"]
