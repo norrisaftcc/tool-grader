@@ -58,6 +58,41 @@ pytest tests/integration/
 
 # Run all tests
 pytest
+
+# Run with coverage
+pytest --cov=src --cov-report=html
+```
+
+### Code Quality
+```bash
+# Format code with black
+black src tests
+
+# Lint with flake8
+flake8 src tests
+
+# Type checking
+mypy src
+```
+
+## Repository Structure
+
+```
+tool-grader/
+├── src/                    # Source code
+│   ├── autograder/        # Core grading logic
+│   ├── webhook/           # Webhook service
+│   └── cli/               # Command-line interface
+├── tests/                  # Test suite
+├── docker/                 # Docker configuration
+├── docs/                   # Documentation
+│   ├── architecture/      # System design docs
+│   ├── setup/            # Setup guides
+│   ├── api/              # API documentation
+│   ├── development/      # Development guides
+│   └── examples/         # Example configurations
+├── templates/             # Assignment templates
+└── CLAUDE.md             # This file
 ```
 
 ## Key Components
@@ -98,3 +133,12 @@ The system uses environment variables and YAML configuration files:
   - Resource limits
   - Canvas integration settings
   - Feedback options
+
+## Documentation
+
+- [Main Documentation](docs/index.md)
+- [Architecture Overview](docs/architecture/research_report.md)
+- [Canvas Setup Guide](docs/setup/canvas_setup.md)
+- [GitHub Setup Guide](docs/setup/github_setup.md)
+- [Development Guide](docs/development/README.md)
+- [API Documentation](docs/api/README.md)
